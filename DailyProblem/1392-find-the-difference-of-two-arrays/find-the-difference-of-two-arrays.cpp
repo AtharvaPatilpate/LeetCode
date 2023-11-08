@@ -7,13 +7,13 @@ public:
         vector<vector<int>> answer(2);
 
         for (auto i : s1) {
-            if (s2.count(i) == 0) {
+            if (s2.find(i) == s2.end()) {
                 answer[0].push_back(i);
             }
         }
 
         for (auto i : s2) {
-            if (s1.count(i) == 0) {
+            if (s1.find(i) == s1.end()) {
                 answer[1].push_back(i);
             }
         }
