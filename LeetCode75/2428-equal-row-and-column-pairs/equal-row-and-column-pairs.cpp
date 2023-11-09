@@ -1,6 +1,5 @@
 class Solution {
 public:
-
     int equalPairs(vector<vector<int>>& grid) {
         int n = grid.size();
         vector<vector<int>> cols(n);
