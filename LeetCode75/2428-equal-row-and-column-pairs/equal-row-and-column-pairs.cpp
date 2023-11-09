@@ -20,7 +20,6 @@ public:
             ans += r[it]; 
         }
 
-
         return ans;
     }
 };
