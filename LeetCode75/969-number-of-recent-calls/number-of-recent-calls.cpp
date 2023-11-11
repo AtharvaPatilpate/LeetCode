@@ -3,9 +3,7 @@ public:
     queue<int> rq;
 
     RecentCounter() {
-        while(!rq.empty()){
-            rq.pop();
-        }
+        rq = {};
     }
     
     int ping(int t) {
