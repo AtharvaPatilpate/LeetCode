@@ -30,7 +30,6 @@ public:
         prev->next = mid->next;
 
         delete mid;
-
         return head;
     }
 };
