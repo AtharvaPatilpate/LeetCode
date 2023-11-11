@@ -13,8 +13,7 @@ public:
     ListNode* deleteMiddle(ListNode* head) {
 
         if(head->next == NULL) {
-            head = NULL;
-            return head;
+            return NULL;
         }
 
         ListNode* curr = head;
