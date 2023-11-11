@@ -10,7 +10,6 @@
  */
 class Solution {
 public:
-
     ListNode* reverse(ListNode* head){
         ListNode*p = NULL, *q = NULL, *r = head;
 
