@@ -3,7 +3,7 @@ public:
     queue<int> rq;
 
     RecentCounter() {
-        rq = {};
+        queue<int>().swap(rq);
     }
     
     int ping(int t) {
