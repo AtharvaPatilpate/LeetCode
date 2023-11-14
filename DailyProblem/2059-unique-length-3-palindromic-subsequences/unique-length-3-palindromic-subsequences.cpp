@@ -11,7 +11,7 @@ public:
         for (auto i = 0; i < s.length(); i++) {
             freq[s[i]]++;
             last[s[i]] = i;
-            if (!first.count(s[i])) {
+            if (freq[s[i]] < 2) {
                 first[s[i]] = i;
             }
         }
