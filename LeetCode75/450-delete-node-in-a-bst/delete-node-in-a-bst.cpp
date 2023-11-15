@@ -12,16 +12,16 @@
 class Solution {
 public:
     TreeNode* deleteNode(TreeNode* root, int key) {
-        if(root==NULL) {
-            return NULL;
+        if(root == nullptr) {
+            return nullptr;
         }
 
-        if(key<root->val){
-            root->left=deleteNode(root->left,key);
+        if(key<root->val) {
+            root->left = deleteNode(root->left,key);
         }
         
-        else if(key>root->val){
-            root->right=deleteNode(root->right,key);
+        else if(key>root->val) {
+            root->right = deleteNode(root->right,key);
         }
 
         else{
@@ -30,12 +30,12 @@ public:
                 return NULL;
             }
 
-             else if(!root->left || !root->right){
+             else if(!root->left || !root->right) {
                 TreeNode* temp = (root->left ? root->left : root->right);
                 return temp;
             }
 
-            else if(root->left && root->right){
+            else if(root->left && root->right) {
                 TreeNode* temp = root;
                 temp = temp->left;
 
