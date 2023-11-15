@@ -12,8 +12,8 @@
 class Solution {
 public:
     TreeNode* deleteNode(TreeNode* root, int key) {
-        if(root == nullptr) {
-            return nullptr;
+        if(root == NULL) {
+            return NULL;
         }
 
         if(key<root->val) {
