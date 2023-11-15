@@ -26,14 +26,12 @@ public:
 
         else{
 
-            if(!root->left && !root->right){
-                delete root;
+            if(!root->left && !root->right) {
                 return NULL;
             }
 
              else if(!root->left || !root->right){
                 TreeNode* temp = (root->left ? root->left : root->right);
-                delete root;
                 return temp;
             }
 
